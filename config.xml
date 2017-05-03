@@ -84,4 +84,9 @@
     <plugin name="cordova-plugin-network-information" spec="1.2.x" />
     <plugin name="cordova-plugin-splashscreen" spec="4.0.x" />
     <plugin name="cordova-plugin-whitelist" spec="1.2.x" />
+    <%	for(let plugin of plugins) {
+	
+    %>    <plugin name="<%= plugin %>" spec="*" />
+<%
+     } %>
 </widget>
